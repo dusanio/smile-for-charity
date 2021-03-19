@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Amazon Smile Redirecting",
+   
+    "icons": {
+        "16": "smiley16.png",
+        "48": "smiley48.png",
+        "128": "smiley.png"
+    },
+  
+    "description": "Every 'www.amazon.com(de, co.uk)/...' kind of link is redirected to 'smile.amazon.com(de, co.uk)/...'",
+    
+    "version": "1.5",
+  
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "*://www.amazon.com/*",
+      "*://www.amazon.co.uk/*",
+      "*://www.amazon.de/*"
+    ],
+  
+    "background": {
+      "scripts": ["plugin.js"]
+    }
+  }
